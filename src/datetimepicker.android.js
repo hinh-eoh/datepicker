@@ -85,7 +85,7 @@ export default function RNDateTimePicker(props: AndroidNativeProps) {
     minuteInterval,
     timeZoneOffsetInMinutes,
   } = props;
-  const valueTimestamp = value.getTime();
+  const valueTimestamp = value;
 
   useEffect(() => {
     // This effect runs on unmount / with mode change, and will ensure the picker is closed.
